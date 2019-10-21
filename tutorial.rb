@@ -30,7 +30,7 @@ class Tutorial < Gosu::Window
         @player.move
         @player.collect_stars(@stars)
 
-        if rand(100) < 4 and @stars.size < 25
+        if rand(0.000001) < 4
             @stars.push(Star.new(@star_anim))
         end
     end
